@@ -1,8 +1,10 @@
 # codonAutocorrelation
-Compute codon autocorrelation 
+From fasta, compute codon autocorrelation (aka codon covariation, codon reuse) 
+relative to 
+
 
 ## What is included
-- Sets of scripts to analyze codon autocorrelation in fasta sequences
+- Sets of scripts to analyze codon autocorrelation in fasta sequences (please note, current implementation is limited to computing codon covariation ONLY within synonymous codons)
 - Outputs 3 types of measurements: number of standard deviations from expected, effect vector and  relative synonymous codon pair usage (RSCPU)
 
 ## Quick start
@@ -39,6 +41,9 @@ This will generate a merged file: <INPUT>.FIXED
 ```
   parse_codon_autocorrelation_merged.R --save <FILE.FIXED>
 ```
+
+## Future work
+Code can be modified to allow for the calculation of codon autocorrelation among non-synonymous codons (ongoing work)
 
 ## Citing this work
 

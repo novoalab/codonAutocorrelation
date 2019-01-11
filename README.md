@@ -37,7 +37,7 @@ This will generate a merged file: <INPUT>.FIXED
 
 ### STEP 5: COMPUTE CODON STATISTICS OF PAIR USAGE, RELATIVE TO INDIVIDUAL CODON USAGE
 ```
-  parse_codon_autocorrelation_merged.R --save <INPUT>
+  parse_codon_autocorrelation_merged.R --save <FILE.FIXED>
 ```
 
 ## Citing this work

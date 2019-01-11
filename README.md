@@ -11,7 +11,9 @@ For more information on what these metrics are, please see: Novoa EM, Jungreis I
 
 ## Quick start
 If you want to go directly from a fasta to relative codon pair usage, you can directly run:
-''' (either in the form of the Relative Synonymos Codon Pair Usage (RSCPU) and/or codon pair usage standard deviation from expected 
+```
+fromFasta2CodonAutocorrelation.sh <FILE.fasta>
+```
 
 ## How to run the software: step by step
 

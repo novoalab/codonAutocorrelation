@@ -55,6 +55,5 @@ If you find this code useful, please cite: Novoa EM, Jungreis I, Jaillon O, Kell
 
 ## Contact
 
-If you have any doubts/questions/concerns, please contact: enovoa@mit.edu. Thanks!
-
+If you have any doubts/questions/concerns, please contact: eva.novoa@crg.eu. Thanks!
 

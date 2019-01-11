@@ -26,7 +26,7 @@ You can download them, for example, from the EMBL CDS database: ftp://ftp.ebi.a
 codon_autocorrelation_multiple_sequences.py <FILE.fasta> <mode>
 where: <mode> can be DNA or RNA
 ```
-This will generate two files: FILE.total_codons an FILE.paired_codons
+This will generate two files: <INPUT>.total_codons an <INPUT>.paired_codons
 
 ### STEP 3: Merge two files from step 2
 ```
@@ -43,7 +43,7 @@ This will generate a merged file: <INPUT>.FIXED
 
 ### STEP 5: Compute codon pair usage statistics, relative to individual codon usage
 ```
-  parse_codon_autocorrelation_merged.R --save <FILE.FIXED>
+  parse_codon_autocorrelation_merged.R --save < FILE.FIXED
 ```
 
 ## Future work

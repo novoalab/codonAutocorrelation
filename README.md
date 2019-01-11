@@ -1,11 +1,13 @@
 # codonAutocorrelation
-From fasta, compute codon autocorrelation (aka codon covariation, codon reuse) 
-relative to 
-
+Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair usage) from fasta sequences
 
 ## What is included
-- Sets of scripts to analyze codon autocorrelation in fasta sequences (please note, current implementation is limited to computing codon covariation ONLY within synonymous codons)
-- Outputs 3 types of measurements: number of standard deviations from expected, effect vector and  relative synonymous codon pair usage (RSCPU)
+- Scripts to compute and analyze codon autocorrelation from fasta sequences 
+- Output: 3 types of measurements: 
+(i) number of standard deviations from expected
+(ii) effect vector
+(iii) relative synonymous codon pair usage (RSCPU) 
+For more information on what these metrics are, please see: Novoa EM, Jungreis I, Jaillon O, Kellis M. Elucidation of codon usage signatures across the domains of life. bioRxiv 2018. https://doi.org/10.1101/421487
 
 ## Quick start
 If you want to go directly from a fasta to relative codon pair usage, you can directly run:

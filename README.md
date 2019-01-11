@@ -15,8 +15,8 @@ If you want to go directly from a fasta to relative codon pair usage, you can di
 
 ## How to run the software: step by step
 
-### STEP 1: Download genome CDS fasta sequences
-You can get them, for example, from EMBL CDS database: ftp://ftp.ebi.ac.uk/
+### STEP 1: Download genome CDS fasta sequences
+You can download them, for example, from the EMBL CDS database: ftp://ftp.ebi.ac.uk/
 
 ### STEP 2: Get frequencies of codon pairs 
 
@@ -39,7 +39,7 @@ fix_merged_file_codon_autocorrelation_counts_ALLaminoacids.sh <FILE.merged>
 ```
 This will generate a merged file: <INPUT>.FIXED
 
-### STEP 5: COMPUTE CODON STATISTICS OF PAIR USAGE, RELATIVE TO INDIVIDUAL CODON USAGE
+### STEP 5: Compute codon pair usage statistics, relative to individual codon usage
 ```
   parse_codon_autocorrelation_merged.R --save <FILE.FIXED>
 ```

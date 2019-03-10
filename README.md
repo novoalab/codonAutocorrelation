@@ -21,7 +21,7 @@ fromFasta2CodonAutocorrelationFAST.sh Saccharomyces_cerevisiae.CDS.fasta
 Results will be placed in 'results' folder
 
 ## Comprehensive start
-To obtain the raw data needed to compute codon autocorrelation within codons that encode for same amino acid but also across amino acids, a much slower version of this script should be used:
+To obtain ALL vs ALL codons, to compute codon autocorrelation within codons that encode for same amino acid, but also across amino acids, a much slower version of this script should be used:
 ```
 fromFasta2CodonAutocorrelation.sh <FILE.fasta>
 ```

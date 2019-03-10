@@ -14,6 +14,11 @@ If you want to go directly from a fasta to relative codon pair usage, you can di
 ```
 fromFasta2CodonAutocorrelation.sh <FILE.fasta>
 ```
+Results will be placed in 'results' folder
+Example: 
+```
+fromFasta2CodonAutocorrelation.sh Saccharomyces_cerevisiae.CDS.fasta
+```
 
 ## How to run the software: step by step
 

@@ -6,7 +6,7 @@ Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair us
 - Output: 3 types of measurements: 
   * (i) number of standard deviations from expected -- output file: *.sdevs.txt
   * (ii) effect vector/matrix -- output files: *.effect_vector.txt and *effect_matrix.txt
-  * (iii) relative synonymous codon pair usage (RSCPU) -- output files *rscpu*.txt
+  * (iii) relative synonymous codon pair usage (RSCPU) -- output files *rscpu_way1.txt and *rscpu_way2.txt
   
 - For more information on what these metrics are, please see: Novoa EM, Jungreis I, Jaillon O, Kellis M. Elucidation of codon usage signatures across the domains of life. bioRxiv 2018. https://doi.org/10.1101/421487
 

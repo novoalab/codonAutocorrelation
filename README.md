@@ -4,9 +4,9 @@ Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair us
 ## What is included
 - Scripts to compute and analyze codon autocorrelation from fasta sequences 
 - Output: 3 types of measurements: 
-  (i) number of standard deviations from expected
-  (ii) effect vector
-  (iii) relative synonymous codon pair usage (RSCPU) 
+  * (i) number of standard deviations from expected
+  * (ii) effect vector
+  * (iii) relative synonymous codon pair usage (RSCPU) 
 For more information on what these metrics are, please see: Novoa EM, Jungreis I, Jaillon O, Kellis M. Elucidation of codon usage signatures across the domains of life. bioRxiv 2018. https://doi.org/10.1101/421487
 
 ## Quick start

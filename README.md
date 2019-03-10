@@ -4,9 +4,12 @@ Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair us
 ## What's included
 - Scripts to compute and analyze codon autocorrelation from fasta sequences 
 - Output: 3 types of measurements: 
-  * (i) number of standard deviations from expected, as defined in Cannarozzi et al, Cell 2010 (https://www.cell.com/abstract/S0092-8674(10)00189-3)  -- output file: *.sdevs.txt
-  * (ii) effect matrix, corresponding to the normalized sdevs, for each amino acid -- output files: *effect_matrix.txt
-  * (iii) relative synonymous codon pair usage (RSCPU), as defined in Novoa et al., bioRxiv 2018. (https://doi.org/10.1101/421487) -- output files *rscpu_way1.txt and *rscpu_way2.txt
+  * (i) SDEVS: number of standard deviations from expected, as defined in Cannarozzi et al, Cell 2010 (https://www.cell.com/abstract/S0092-8674(10)00189-3)  
+   ** output file: *.sdevs.txt
+  * (ii) EFFECT MATRIX corresponding to the normalized sdevs, for each amino acid -- output files: *effect_matrix.txt
+   **
+  * (iii) RSCPU: relative synonymous codon pair usage, as defined in Novoa et al., bioRxiv 2018. (https://doi.org/10.1101/421487) 
+   ** output files *rscpu_way1.txt and *rscpu_way2.txt
 
 ## Quick start
 If you want to go directly from a fasta to relative codon pair usage, you can directly run:

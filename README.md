@@ -23,8 +23,7 @@ You can download them, for example, from the EMBL CDS database: ftp://ftp.ebi.a
 ### STEP 2: Get frequencies of codon pairs 
 
 ```
-codon_autocorrelation_multiple_sequences.py <FILE.fasta> <mode>
-where: <mode> can be DNA or RNA
+codon_autocorrelation_multiple_sequences.py <FILE.fasta> 
 ```
 This will generate two files: <INPUT>.total_codons an <INPUT>.paired_codons
 
@@ -37,7 +36,7 @@ This will generate a merged file: <INPUT>.merged
 
 ### STEP 4: Fix missing values for codon pairs that did not exist
 ```
-fix_merged_file_codon_autocorrelation_counts_ALLaminoacids.sh <FILE.merged>
+fix_merged_file_codon_autocorrelation_counts.sh <FILE.merged>
 ```
 This will generate a merged file: <INPUT>.FIXED
 

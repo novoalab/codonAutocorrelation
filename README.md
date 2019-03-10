@@ -4,7 +4,7 @@ Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair us
 ## What's included
 - Scripts to compute and analyze codon autocorrelation from fasta sequences 
 - Output: 3 types of measurements: 
-* (i) SDEVS: number of standard deviations from expected, as defined in Cannarozzi et al, Cell 2010 (https://www.cell.com/abstract/S0092-8674(10)00189-3) 
+  * (i) SDEVS: number of standard deviations from expected, as defined in Cannarozzi et al, Cell 2010 (https://www.cell.com/abstract/S0092-8674(10)00189-3) 
   --> output file: *.sdevs.txt
   * (ii) EFFECT MATRIX: normalized sdevs, for each amino acid 
   --> output files: *effect_matrix.txt  

@@ -1,7 +1,7 @@
 # codonAutocorrelation
 Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair usage) from fasta sequences
 
-## What is included
+## What's included
 - Scripts to compute and analyze codon autocorrelation from fasta sequences 
 - Output: 3 types of measurements: 
   * (i) number of standard deviations from expected -- output file: *.sdevs.txt

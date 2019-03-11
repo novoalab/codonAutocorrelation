@@ -20,11 +20,10 @@ Example:
 ```
 fromFasta2CodonAutocorrelationFAST.sh Saccharomyces_cerevisiae.CDS.fasta
 ```
-Results will be placed in 'results' folder
-It is important to note that this mode will also consider consecutive codons (i.e. dicodon frequencies), which are excluded in the case of the slower version, to avoid biases that exist naturally as "dicodon".   
+It is important to note that this mode will also consider consecutive codons (i.e. dicodon frequencies), which are excluded in the case of the slower version, to avoid biases that exist naturally as "dicodon".  Results will be placed in 'results' folder.
 
 ## Comprehensive start
-This version excludes consecutive codons (i.e. dicodons) from the analysis. Furthermore this version also computes codon autocorrelation between codons that belong to different amino acids. For these two reasons, this code is much slower than the "quick start" one. In our hands, we have found that excluding consecutive codons does not significantly vary the results (at least in the few species that we have checked this), however, this may not be the case for all species. 
+This version *excludes* consecutive codons (i.e. dicodons) from the analysis. Furthermore this version also computes codon autocorrelation between codons that belong to different amino acids. For these two reasons, this code is much slower than the "quick start" one. In our hands, we have found that excluding consecutive codons does not significantly vary the results (at least in the few species that we have checked this), however, this may not be the case for all species. 
 Overall, the fast version (i.e. fromFasta2CodonAutocorrelationFAST.sh) is recommended if only codon autocorrelation across codons that encode for the same amino acid is needed.
 
 Usage: 

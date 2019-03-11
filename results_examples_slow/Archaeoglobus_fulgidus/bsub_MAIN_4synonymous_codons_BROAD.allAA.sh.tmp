@@ -1,0 +1,35 @@
+#!/bin/bash -l
+
+#!/bin/bash -l
+#BSUB -q compbio-week
+#BSUB -o lsf_output.out
+#BSUB -R "rusage[mem=8]"
+#BSUB -J autocorr
+
+use R-3.0
+
+input_fasta="Archaeoglobus_fulgidus.fa"
+
+# 1. Build total_codons and paired_codons from fasta
+~/work/embl_cds-nov2014analysis/codon_autocorrelation_2015/scripts/codon_autocorrelation_multiple_sequences.ALL_AA.codonVSotherAAbox.py $input_fasta DNA
+
+# 2. Build merged from total_codons and paired_codons
+~/work/embl_cds-nov2014analysis/codon_autocorrelation_2015/scripts/parse_codon_autocorrelation_output_ALLaminoacids.sh $input_fasta.paired_codons $input_fasta.total_codons
+
+# 3. Fix merged with missing pairs
+~/work/embl_cds-nov2014analysis/codon_autocorrelation_2015/scripts/fix_merged_file_codon_autocorrelation_counts_ALLaminoacids.sh $input_fasta.codon_counts.merged;                                                                     
+
+# 4. Build R code with specific input and get SDEVS and plots 
+cat ~/work/embl_cds-nov2014analysis/codon_autocorrelation_2015/scripts/parse_codon_autocorrelation_merged_ALLaminoacids_RSCPU_4096.R | sed "s/INPUTFILE/$input_fasta.codon_counts.merged.FIXED/g" > $input_fasta.codon_counts.merged.FIXED.R
+R --save < $input_fasta.codon_counts.merged.FIXED.R
+                                           
+## 5. Build pasted RSCPU
+#echo ""> tmp;  for i in `ls | grep "txt$" | grep way1`; do paste $i tmp > tmp2; mv tmp2 tmp; done; cat tmp | sed 's/\.codon_counts\.merged\.FIXED\.ALLaminoacids_for_synonymous//g' > rscpu_way1.pasted; rm tmp
+#echo ""> tmp;  for i in `ls | grep "txt$" | grep way2`; do paste $i tmp > tmp2; mv tmp2 tmp; done; cat tmp | sed 's/\.codon_counts\.merged\.FIXED\.ALLaminoacids_for_synonymous//g' > rscpu_way2.pasted; rm tmp
+
+
+
+
+
+
+

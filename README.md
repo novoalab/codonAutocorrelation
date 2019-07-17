@@ -1,6 +1,8 @@
 # codonAutocorrelation
 Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair usage) from fasta sequences
 
+This code was used in the analyses of the manuscript 'Elucidation of codon usage signatures across the domains of life', available here: https://doi.org/10.1093/molbev/msz124
+
 ## What's included
 - Scripts to compute and analyze codon autocorrelation from fasta sequences 
 - Output: 3 types of measurements: 
@@ -72,7 +74,7 @@ This will generate a merged file: <INPUT>.FIXED
 
 ## Citing this work
 
-If you find this code useful, please cite: Novoa EM, Jungreis I, Jaillon O, Kellis M. Elucidation of codon usage signatures across the domains of life. bioRxiv 2018. https://doi.org/10.1101/421487
+If you find this code useful, please cite: Novoa EM, Jungreis I, Jaillon O, Kellis M. Elucidation of codon usage signatures across the domains of life. Mol Biol Evol 2019. https://doi.org/10.1093/molbev/msz1247
 
 ## Contact
 

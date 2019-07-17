@@ -1,5 +1,6 @@
 # codonAutocorrelation
-Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair usage) from fasta sequences
+Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair usage) from fasta sequences.
+
 This code was used in the analyses of the manuscript *'Elucidation of codon usage signatures across the domains of life'* (Novoa et al., Mol Biol Evol 2019), available here: https://doi.org/10.1093/molbev/msz124
 
 ## What is codon autocorrelation? 

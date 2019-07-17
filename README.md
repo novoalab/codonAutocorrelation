@@ -19,7 +19,7 @@ Despite the uncertain cause of codon covariation, both studies show that the pro
   --> output file: *.sdevs.txt
   * *EFFECT MATRIX*: normalized sdevs, for each amino acid 
   --> output files: *effect_matrix.txt  
-  * *RSCPU*: relative synonymous codon pair usage, as defined in Novoa et al., bioRxiv 2018. (https://doi.org/10.1101/421487) 
+  * *RSCPU*: relative synonymous codon pair usage, as defined in Novoa et al., Mol Biol Evol 2019. (https://doi.org/10.1093/molbev/msz124) 
    --> output files *rscpu_way1.txt and *rscpu_way2.txt
 
 ## Quick start

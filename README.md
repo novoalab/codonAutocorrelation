@@ -2,7 +2,7 @@
 Compute codon autocorrelation (aka codon covariation, codon reuse, codon pair usage) from fasta sequences
 This code was used in the analyses of the manuscript 'Elucidation of codon usage signatures across the domains of life', available here: https://doi.org/10.1093/molbev/msz124
 
-# What is codon autocorrelation? 
+## What is codon autocorrelation? 
 Codon autocorrelation reflects the non-random distribution of consecutive codon occurrences throughout a transcript. Previous studies in yeast have shown that once a particular codon has been used, subsequent occurrences of the same amino acid in the same transcript are not random (Cannarozzi, et al. 2010), a phenomenon termed as ‘codon autocorrelation’ or ‘codon covariation’. Mechanistically, it was argued that tRNA recycling was the driving force causing the observed biased distribution of synonymous codons along a sequence, i.e., codons that would reuse the same tRNA would be favored as a means to increase the speed of translation (Cannarozzi, et al. 2010). A subsequent study re-examined this question, and compared the autocorrelation between codons encoding the same amino acids to those encoding different ones (Hussmann and Press 2014). Intriguingly, this second study found that covariation between codons encoding different amino acids was as strong as covariation between codons encoding the same amino acid, concluding that there was insufficient evidence to claim that tRNA recycling is the force driving codon autocorrelation. Despite the uncertain cause of codon covariation, both studies show that the probability of observing a specific codon is dependent on previous codon occurrences.
 
 ## What's included
@@ -80,5 +80,5 @@ If you find this code useful, please cite: Novoa EM, Jungreis I, Jaillon O, Kell
 
 ## Contact
 
-If you have any doubts/questions/concerns, please contact: eva.novoa@crg.eu. Thanks!
+If you have any doubts/questions/concerns, please contact: evamaria.novoa@gmail.com. Thanks!
 
